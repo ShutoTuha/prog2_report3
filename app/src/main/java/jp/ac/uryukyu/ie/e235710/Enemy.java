@@ -7,6 +7,7 @@ package jp.ac.uryukyu.ie.e235710;
  *  int attack; //敵の攻撃力
  *  boolean dead; //敵の生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
+ *  getterとsetはprivate変数を設定や変更できるアクセサ
  */
 public class Enemy {
     private String name;
@@ -14,34 +15,63 @@ public class Enemy {
     private int attack;
     private boolean dead;
 
+/**
+ * 敵の名前を保存
+ * @return name 
+ */
     public String getName(){
         return name;
     }
-
+/**
+ * 敵のHPを保存
+ * @return hitPoint
+ */
     public int getHitPoint(){
         return hitPoint;
     }
 
+/**
+ * 敵の攻撃力を保存
+ * @return attack
+ */
     public int getAttack(){
         return attack;
     }
 
+/**
+ * 敵の生存状態を保存
+ * true = 死亡
+ * @return dead
+ */
     public boolean getDead(){
         return dead;
     }
 
+/**
+ * 敵の名前を変更できる
+ * @param name
+ */
     public void setName(String name) {
         this.name = name;
     }
-
+/**
+ * 敵のHPを変更できる
+ * @param hitPoint
+ */
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
-
+/**
+ * 敵の攻撃力を変更できる
+ * @param attack
+ */
     public void setAttack(int attack){
         this.attack = attack;
     }
-
+/**
+ * 敵の生存状態を変更できる
+ * @param dead
+ */
     public void setDead(boolean dead){
         this.dead = dead;
     }

@@ -7,41 +7,69 @@ package jp.ac.uryukyu.ie.e235710;
  *  int attack; //敵の攻撃力
  *  boolean dead; //敵の生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
+ * getterとsetはprivate変数を設定や変更できるアクセサ
  */
 public class Hero {
     private String name;
     private int hitPoint;
     private int attack;
     private boolean dead;
-
+    
+/**
+ * ヒーローの名前を保存
+ * @return name 
+ */
     public String getName(){
         return name;
     }
-
+/**
+ * ヒーローのHPを保存
+ * @return hitPoint
+ */
     public int getHitPoint(){
         return hitPoint;
     }
-
+/**
+ * ヒーローの攻撃力を保存
+ * @return attack
+ */
     public int getAttack(){
         return attack;
     }
-
+/**
+ * ヒーローの生存状態を保存
+ * @return dead
+ */
     public boolean getDead(){
         return dead;
     }
 
+/**
+ * ヒーローの名前を変更できる
+ * @param name
+ */
     public void setName(String name) {
         this.name = name;
     }
-
+/**
+ * ヒーローのHPを変更できる
+ * @param hitPoint
+ */
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
-
+/**
+ * ヒーローの攻撃力を変更できる
+ * @param attack
+ */
     public void setAttack(int attack){
         this.attack = attack;
     }
-
+/**
+ * ヒーローの生存状態を変更できる
+ * true = 死亡
+ * @param dead
+ */
     public void setDead(boolean dead){
         this.dead = dead;
     }
