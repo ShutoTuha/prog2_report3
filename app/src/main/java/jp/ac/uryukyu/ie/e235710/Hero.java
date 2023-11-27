@@ -7,14 +7,13 @@ package jp.ac.uryukyu.ie.e235710;
  *  int attack; //敵の攻撃力
  *  boolean dead; //敵の生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
- * getterとsetはprivate変数を設定や変更できるアクセサ
  */
 public class Hero extends LivingThing {
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
-     * @param name ヒーロー名
+     * @param _name ヒーロー名
      * @param maximumHP ヒーローのHP
-     * @param attack ヒーローの攻撃力
+     * @param _attack ヒーローの攻撃力
      */
     public Hero (String _name, int maximumHP, int _attack) {
         super(_name, maximumHP, _attack);

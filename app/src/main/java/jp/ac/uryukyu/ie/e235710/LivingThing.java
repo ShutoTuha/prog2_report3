@@ -1,5 +1,13 @@
 package jp.ac.uryukyu.ie.e235710;
 
+/**
+ * LivingThingクラス。
+ *  String name; //キャラの名前　キャラ＝キャラクター
+ *  int hitPoint; //キャラのHP
+ *  int attack; //キャラの攻撃力
+ *  boolean dead; //キャラの生死状態。true=死亡。
+ * Created by tnal on 2016/11/13.
+ */
 public class LivingThing {
     private String name;
     private int hitPoint;
